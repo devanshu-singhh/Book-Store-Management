@@ -7,7 +7,7 @@ And Tables :
 
 Books
 
-  int id			// Primary Key
+    int id			// Primary Key
 	string name
 	string auth
 	int price
@@ -15,7 +15,7 @@ Books
 
 suppliers
 
-  int id				//Primary Key
+	int id				//Primary Key
 	string name
 	long int phn
 	string addr_line1
@@ -25,7 +25,7 @@ suppliers
 
 purchases
 
-  int ord_id			//Primary Key
+	int ord_id			//Primary Key
 	int book_id		    //FK ref (books)
 	int sup_id			//FK ref (suppliers)
 	int qty
@@ -36,7 +36,7 @@ purchases
 
 employees
 
-  int id				//Primary Key
+	int id				//Primary Key
 	string name
 	string addr_line1
 	string addr_line2
@@ -49,7 +49,7 @@ employees
 
 members
 
-  int id				//Primary Key
+    int id				//Primary Key
 	string name
 	string addr_line1
 	string addr_line2
@@ -62,8 +62,8 @@ members
 
 sales
 
-  int invoice_id		//Primary key
-  int member_id		//FK ref member(id)
+	int invoice_id		//Primary key
+    int member_id		//FK ref member(id)
 	int book_id		//FK ref books(id)
 	int qty
 	int amount
